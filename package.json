@@ -13,7 +13,17 @@
   },
   "scripts": {
     "lint": "eslint --ext ts .",
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "@parcel/plugin": "^2.2.0",
@@ -28,6 +38,8 @@
     "@vtex/prettier-config": "^1.0.0",
     "eslint": "^7",
     "eslint-config-vtex": "^14.1.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.7",
     "prettier": "^2.5.1",
     "typescript": "^4.5.4"
   }
