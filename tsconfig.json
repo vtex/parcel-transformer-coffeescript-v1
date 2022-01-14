@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "alwaysStrict": true,
+    "outDir": "lib",
+    "lib": ["esnext", "dom"],
+    "target": "es5",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["./src/CoffeeScriptTransformer.ts", "./coffeescript.d.ts", "./parcel-utils.d.ts"]
+}
