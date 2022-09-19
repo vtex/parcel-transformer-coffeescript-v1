@@ -14,7 +14,7 @@ export default new Transformer({
     const output = coffee.compile(await asset.getCode(), {
       filename: sourceFileName,
       sourceMap: !!asset.env.sourceMap,
-      bare: true,
+      bare: false,
     })
 
     // return from compile is based on sourceMap option
