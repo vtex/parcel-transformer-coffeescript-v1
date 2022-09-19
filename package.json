@@ -18,7 +18,8 @@
   "scripts": {
     "lint": "eslint --ext ts .",
     "build": "tsc",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepublishOnly": "yarn build"
   },
   "lint-staged": {
     "*.{js,ts}": [
