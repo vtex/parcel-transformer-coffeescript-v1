@@ -36,7 +36,7 @@
     "@parcel/utils": "^2.2.0",
     "coffeescript": "^1.12.7",
     "nullthrows": "^1.1.1",
-    "semver": "^5.7.1"
+    "semver": "^7.5.2"
   },
   "devDependencies": {
     "@types/node": "^17.0.8",
